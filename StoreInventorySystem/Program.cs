@@ -1,4 +1,7 @@
-using StoreInventorySystem.Middlewares;
+using Microsoft.EntityFrameworkCore;
+using StoreInventorySystem.Application;
+using StoreInventorySystem.Infrastructure;
+using StoreInventorySystem.Presentation.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure();
+
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite("Data Source=products.db"));
 
 var app = builder.Build();
 

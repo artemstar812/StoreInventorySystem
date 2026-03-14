@@ -1,4 +1,4 @@
-﻿namespace StoreInventorySystem
+﻿namespace StoreInventorySystem.Domain.Entities
 {
     public class Product
     {

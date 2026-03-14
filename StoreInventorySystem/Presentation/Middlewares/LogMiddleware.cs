@@ -1,4 +1,4 @@
-﻿namespace StoreInventorySystem.Middlewares
+﻿namespace StoreInventorySystem.Presentation.Middlewares
 {
     public class LogMiddleware
     {
