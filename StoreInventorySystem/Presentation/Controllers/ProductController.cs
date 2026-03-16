@@ -22,6 +22,13 @@ namespace StoreInventorySystem.Presentation.Controllers
             return Ok(products);
         }
 
+        [HttpGet("search")]
+        public async Task<ActionResult<IEnumerable<Product>>> Search(string query)
+        {
+            var products = _productService.Search(query);
+            return Ok(products);
+        }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetById(int id)
         {

@@ -22,6 +22,11 @@ namespace StoreInventorySystem.Application.Services
             return _repository.GetByIdAsync(id);
         }
 
+        public Task<List<Product>> Search(string query)
+        {
+            return _repository.Search(query);
+        }
+
         public Task AddProduct(Product product)
         {
             return _repository.AddAsync(product);

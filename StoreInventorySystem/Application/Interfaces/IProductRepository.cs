@@ -5,7 +5,8 @@ namespace StoreInventorySystem.Application.Interfaces
     public interface IProductRepository
     {
         Task<List<Product>> GetAllAsync();
-        Task<Product?> GetByIdAsync(int id);  
+        Task<Product?> GetByIdAsync(int id);
+        Task<List<Product>> Search(string query);
         Task AddAsync(Product product);
         Task UpdateAsync(Product updatedProduct);
         Task DeleteAsync(int id);

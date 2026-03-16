@@ -41,6 +41,11 @@ namespace StoreInventorySystem.Infrastructure.Repositories
             return Task.FromResult(product);
         }
 
+        public Task<List<Product>> Search(string query)
+        {
+            return Task.FromResult(_products.Where(p => p.Name.StartsWith(query)).ToList());
+        }
+
         public Task UpdateAsync(Product updatedProduct)
         {
             var product = _products.FirstOrDefault(p => p.Id == updatedProduct.Id);

@@ -36,6 +36,11 @@ namespace StoreInventorySystem.Infrastructure.Repositories
             return await _context.Products.ToListAsync();
         }
 
+        public async Task<List<Product>> Search(string query)
+        {
+            return await _context.Products.Where(p => p.Name.StartsWith(query)).ToListAsync();
+        }
+
         public async Task<Product?> GetByIdAsync(int id)
         {
             var product = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
@@ -45,7 +50,7 @@ namespace StoreInventorySystem.Infrastructure.Repositories
 
             return null;
         }
-
+        
         public async Task UpdateAsync(Product updatedProduct)
         {
             _context.Products.Update(updatedProduct);
