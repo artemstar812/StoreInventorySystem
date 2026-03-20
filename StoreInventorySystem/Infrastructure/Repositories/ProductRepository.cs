@@ -21,7 +21,7 @@ namespace StoreInventorySystem.Infrastructure.Repositories
 
         public async Task DeleteAsync(int id)
         {
-            var product = await GetByIdAsync(id);
+            var product = await _context.Products.FindAsync(id);
 
             if (product != null)
             {
@@ -43,7 +43,7 @@ namespace StoreInventorySystem.Infrastructure.Repositories
 
         public async Task<Product?> GetByIdAsync(int id)
         {
-            var product = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
+            var product = await _context.Products.FindAsync(id);
 
             if(product != null)
                 return product;
@@ -51,9 +51,15 @@ namespace StoreInventorySystem.Infrastructure.Repositories
             return null;
         }
         
-        public async Task UpdateAsync(Product updatedProduct)
+        public async Task UpdateAsync(int id, Product updatedProduct)
         {
-            _context.Products.Update(updatedProduct);
+            var product = await _context.Products.FindAsync(id);
+
+            if (product == null)
+                return;
+
+            product.Name = updatedProduct.Name;
+            product.Price = updatedProduct.Price;
 
             await _context.SaveChangesAsync();
         }

@@ -8,7 +8,7 @@ namespace StoreInventorySystem.Application.Interfaces
         Task<Product?> GetByIdAsync(int id);
         Task<List<Product>> Search(string query);
         Task AddAsync(Product product);
-        Task UpdateAsync(Product updatedProduct);
+        Task UpdateAsync(int id, Product updatedProduct);
         Task DeleteAsync(int id);
     }
 }

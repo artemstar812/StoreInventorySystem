@@ -48,10 +48,10 @@ namespace StoreInventorySystem.Presentation.Controllers
             return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Put(Product updatedProduct)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, Product updatedProduct)
         {
-            await _productService.UpdateProduct(updatedProduct);
+            await _productService.UpdateProduct(id, updatedProduct);
 
             return NoContent();
         }

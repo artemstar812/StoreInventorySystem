@@ -37,9 +37,9 @@ namespace StoreInventorySystem.Application.Services
             return _repository.DeleteAsync(id);
         }
 
-        public Task UpdateProduct(Product updatedProduct)
+        public Task UpdateProduct(int id, Product updatedProduct)
         {
-            return _repository.UpdateAsync(updatedProduct);
+            return _repository.UpdateAsync(id, updatedProduct);
         }
     }
 }
