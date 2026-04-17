@@ -1,4 +1,5 @@
-﻿using StoreInventorySystem.Application.Interfaces;
+﻿using StoreInventorySystem.Application.DTOs.Product;
+using StoreInventorySystem.Application.Interfaces;
 using StoreInventorySystem.Application.Services;
 using StoreInventorySystem.Domain.Entities;
 
@@ -30,6 +31,14 @@ namespace StoreInventorySystem.Infrastructure.Repositories
             return Task.CompletedTask;
         }
 
+        public Task<(List<Product>, int)> GetPagedAsync(int page, int pageSize)
+        {
+            return Task.FromResult((_products
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList(), _products.Count));
+        }
+
         public Task<List<Product>> GetAllAsync()
         {
             return Task.FromResult(_products);
@@ -41,14 +50,17 @@ namespace StoreInventorySystem.Infrastructure.Repositories
             return Task.FromResult(product);
         }
 
-        public Task<List<Product>> Search(string query)
+        public Task<(List<Product>, int)> Search(string query, int page, int pageSize)
         {
-            return Task.FromResult(_products.Where(p => p.Name.StartsWith(query)).ToList());
+            return Task.FromResult((_products.Where(p => p.Name.StartsWith(query))
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList(), _products.Count));
         }
 
-        public Task UpdateAsync(Product updatedProduct)
+        public Task UpdateAsync(int id, Product updatedProduct)
         {
-            var product = _products.FirstOrDefault(p => p.Id == updatedProduct.Id);
+            var product = _products.FirstOrDefault(p => p.Id == id);
 
             if(product != null)
             {
@@ -58,5 +70,7 @@ namespace StoreInventorySystem.Infrastructure.Repositories
 
             return Task.CompletedTask;
         }
+
+        public Task<ProductStatsDto> GetStats() => throw new NotImplementedException();
     }
 }

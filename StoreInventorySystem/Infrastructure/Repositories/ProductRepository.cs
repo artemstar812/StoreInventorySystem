@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using StoreInventorySystem.Application.DTOs.Product;
 using StoreInventorySystem.Application.Interfaces;
 using StoreInventorySystem.Domain.Entities;
 
@@ -11,6 +12,20 @@ namespace StoreInventorySystem.Infrastructure.Repositories
         public ProductRepository(AppDbContext context)
         {
             _context = context;
+        }
+
+        public async Task<(List<Product>, int)> GetPagedAsync(int page, int pageSize)
+        {
+            var total = await _context.Products.CountAsync();
+
+            pageSize = Math.Min(pageSize, 50);
+
+            var items = await _context.Products
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return (items, total);
         }
 
         public async Task AddAsync(Product product)
@@ -36,9 +51,18 @@ namespace StoreInventorySystem.Infrastructure.Repositories
             return await _context.Products.ToListAsync();
         }
 
-        public async Task<List<Product>> Search(string query)
+        public async Task<(List<Product>, int)> Search(string query, int page, int pageSize)
         {
-            return await _context.Products.Where(p => p.Name.StartsWith(query)).ToListAsync();
+            var total = await _context.Products.CountAsync();
+
+            pageSize = Math.Min(pageSize, 50);
+
+            var items = await _context.Products.Where(p => p.Name.StartsWith(query))
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return (items, total);
         }
 
         public async Task<Product?> GetByIdAsync(int id)
@@ -62,6 +86,22 @@ namespace StoreInventorySystem.Infrastructure.Repositories
             product.Price = updatedProduct.Price;
 
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<ProductStatsDto> GetStats()
+        {
+            int totalProducts = await _context.Products.CountAsync();
+            decimal averagePrice = await _context.Products.AverageAsync(p => p.Price);
+            decimal maxPrice = await _context.Products.MaxAsync(p => p.Price);
+            decimal minPrice = await _context.Products.MinAsync(p => p.Price);
+
+            return new ProductStatsDto
+            {
+                TotalProducts = totalProducts,
+                AveragePrice = averagePrice,
+                MaxPrice = maxPrice,
+                MinPrice = minPrice
+            };
         }
     }
 }

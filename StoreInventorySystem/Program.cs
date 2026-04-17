@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using StackExchange.Redis;
 using StoreInventorySystem.Application;
 using StoreInventorySystem.Infrastructure;
 using StoreInventorySystem.Presentation.Middlewares;
@@ -14,6 +15,7 @@ builder.Services.AddApplication();
 builder.Services.AddInfrastructure();
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite("Data Source=products.db"));
+builder.Services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost:6379"));
 
 var app = builder.Build();
 

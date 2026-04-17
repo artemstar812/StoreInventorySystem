@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using StoreInventorySystem.Application.DTOs;
+using StoreInventorySystem.Application.DTOs.Product;
 using StoreInventorySystem.Application.Services;
-using StoreInventorySystem.Domain.Entities;
 
 namespace StoreInventorySystem.Presentation.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/products")]
     public class ProductController : Controller
     {
         private readonly ProductService _productService;
@@ -16,23 +17,31 @@ namespace StoreInventorySystem.Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetAll()
+        public async Task<ActionResult<PagedResult<ProductDto>>> GetProducts(int page = 1, int pageSize = 20)
         {
-            var products = _productService.GetProducts();
+            var result = await _productService.GetProducts(page, pageSize);
+            return Ok(result);
+        }
+
+        [HttpGet("all")]
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetAll()
+        {
+            var products = await _productService.GetAllProducts();
+
             return Ok(products);
         }
 
         [HttpGet("search")]
-        public async Task<ActionResult<IEnumerable<Product>>> Search(string query)
+        public async Task<ActionResult<PagedResult<ProductDto>>> Search(string query, int page = 1, int pageSize = 20)
         {
-            var products = _productService.Search(query);
-            return Ok(products);
+            var result = await _productService.Search(query, page, pageSize);
+            return Ok(result);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetById(int id)
+        public async Task<ActionResult<ProductDto>> GetById(int id)
         {
-            var product = _productService.GetProductById(id);
+            var product = await _productService.GetProductById(id);
 
             if (product == null)
                 return NotFound();
@@ -40,16 +49,24 @@ namespace StoreInventorySystem.Presentation.Controllers
             return Ok(product);
         }
 
-        [HttpPost]
-        public async Task<ActionResult<Product>> Create(Product product)
+        [HttpGet("stats")]
+        public async Task<ActionResult<ProductStatsDto>> GetStats()
         {
-            await _productService.AddProduct(product);
+            var stats = await _productService.GetStats();
 
-            return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
+            return Ok(stats);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<ProductDto>> Create(CreateProductDto product)
+        {
+            var created = await _productService.AddProduct(product);
+
+            return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, Product updatedProduct)
+        public async Task<IActionResult> Put(int id, UpdateProductDto updatedProduct)
         {
             await _productService.UpdateProduct(id, updatedProduct);
 
