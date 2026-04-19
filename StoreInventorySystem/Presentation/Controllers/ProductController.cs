@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using StoreInventorySystem.Application.DTOs;
 using StoreInventorySystem.Application.DTOs.Product;
 using StoreInventorySystem.Application.Services;
 
 namespace StoreInventorySystem.Presentation.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/products")]
     public class ProductController : Controller
@@ -23,6 +25,7 @@ namespace StoreInventorySystem.Presentation.Controllers
             return Ok(result);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet("all")]
         public async Task<ActionResult<IEnumerable<ProductDto>>> GetAll()
         {
@@ -57,6 +60,7 @@ namespace StoreInventorySystem.Presentation.Controllers
             return Ok(stats);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<ActionResult<ProductDto>> Create(CreateProductDto product)
         {
@@ -65,6 +69,7 @@ namespace StoreInventorySystem.Presentation.Controllers
             return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, UpdateProductDto updatedProduct)
         {
@@ -73,6 +78,7 @@ namespace StoreInventorySystem.Presentation.Controllers
             return NoContent();
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

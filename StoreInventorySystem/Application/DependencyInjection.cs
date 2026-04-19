@@ -7,6 +7,7 @@ namespace StoreInventorySystem.Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddScoped<ProductService>();
+            services.AddScoped<AuthService>();
             
             return services;
         }
