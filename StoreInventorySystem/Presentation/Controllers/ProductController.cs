@@ -25,15 +25,6 @@ namespace StoreInventorySystem.Presentation.Controllers
             return Ok(result);
         }
 
-        [Authorize(Roles = "Admin")]
-        [HttpGet("all")]
-        public async Task<ActionResult<IEnumerable<ProductDto>>> GetAll()
-        {
-            var products = await _productService.GetAllProducts();
-
-            return Ok(products);
-        }
-
         [HttpGet("search")]
         public async Task<ActionResult<PagedResult<ProductDto>>> Search(string query, int page = 1, int pageSize = 20)
         {

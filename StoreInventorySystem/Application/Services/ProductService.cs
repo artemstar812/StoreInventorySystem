@@ -40,13 +40,6 @@ namespace StoreInventorySystem.Application.Services
             return result;
         }
 
-        public async Task<List<ProductDto>> GetAllProducts()
-        {
-            var products = await _repository.GetAllAsync();
-
-            return ProductMapper.ToDtoList(products);
-        }
-
         public async Task<ProductDto?> GetProductById(int id)
         {
             var key = CacheKeys.Product(id);

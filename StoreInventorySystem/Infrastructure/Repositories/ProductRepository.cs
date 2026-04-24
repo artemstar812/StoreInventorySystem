@@ -21,6 +21,7 @@ namespace StoreInventorySystem.Infrastructure.Repositories
             pageSize = Math.Min(pageSize, 50);
 
             var items = await _context.Products
+                .AsNoTracking()
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
@@ -46,11 +47,6 @@ namespace StoreInventorySystem.Infrastructure.Repositories
             }
         }
 
-        public async Task<List<Product>> GetAllAsync()
-        {
-            return await _context.Products.ToListAsync();
-        }
-
         public async Task<(List<Product>, int)> Search(string query, int page, int pageSize)
         {
             var total = await _context.Products.CountAsync();
@@ -58,6 +54,7 @@ namespace StoreInventorySystem.Infrastructure.Repositories
             pageSize = Math.Min(pageSize, 50);
 
             var items = await _context.Products.Where(p => p.Name.StartsWith(query))
+                .AsNoTracking()
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
