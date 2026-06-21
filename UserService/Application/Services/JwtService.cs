@@ -1,10 +1,10 @@
 ﻿using Microsoft.IdentityModel.Tokens;
-using StoreInventorySystem.Domain.Entities;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using UserService.Domain.Entities;
 
-namespace StoreInventorySystem.Application.Services
+namespace UserService.Application.Services
 {
     public class JwtService
     {
@@ -20,7 +20,8 @@ namespace StoreInventorySystem.Application.Services
             var claims = new[]
             {
                 new Claim(ClaimTypes.Name, user.Username),
-                new Claim(ClaimTypes.Role, user.Role)
+                new Claim(ClaimTypes.Role, user.Role),
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_key));

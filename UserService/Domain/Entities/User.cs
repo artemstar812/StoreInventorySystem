@@ -1,4 +1,4 @@
-﻿namespace StoreInventorySystem.Domain.Entities
+﻿namespace UserService.Domain.Entities
 {
     public class User
     {

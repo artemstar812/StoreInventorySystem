@@ -3,10 +3,10 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
 using StackExchange.Redis;
 using StoreInventorySystem.Application;
-using StoreInventorySystem.Application.Services;
 using StoreInventorySystem.Infrastructure;
 using StoreInventorySystem.Presentation.Middlewares;
 using System.Text;
+using UserService.Grpc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,10 +36,8 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure();
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite("Data Source=products.db"));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost:6379"));
-
-builder.Services.AddSingleton<JwtService>();
 
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer("Bearer", options =>
@@ -56,13 +54,12 @@ builder.Services.AddAuthentication("Bearer")
 
 builder.Services.AddAuthorization();
 
-var app = builder.Build();
-
-using(var scope = app.Services.CreateScope())
+builder.Services.AddGrpcClient<UsersGrpc.UsersGrpcClient>(options =>
 {
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    DbSeeder.SeedAdmin(db);
-}
+    options.Address = new Uri("https://localhost:7178");
+});
+
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using StoreInventorySystem.Application.Interfaces;
-using StoreInventorySystem.Domain.Entities;
+using UserService.Application.Interfaces;
+using UserService.Domain.Entities;
 
-namespace StoreInventorySystem.Application.Services
+namespace UserService.Application.Services
 {
     public class AuthService
     {
@@ -16,7 +16,7 @@ namespace StoreInventorySystem.Application.Services
 
         public async Task<User?> RegisterAsync(string username, string password)
         {
-            var existing = await _userRepository.GetByUsername(username);
+            var existing = await _userRepository.GetByUsernameAsync(username);
             
             if (existing != null)
                 return null;
@@ -36,7 +36,7 @@ namespace StoreInventorySystem.Application.Services
 
         public async Task<User?> LoginAsync(string username, string password)
         {
-            var user = await _userRepository.GetByUsername(username);
+            var user = await _userRepository.GetByUsernameAsync(username);
 
             if(user == null)
                 return null;

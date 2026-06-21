@@ -9,7 +9,6 @@ namespace StoreInventorySystem.Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
             services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ICacheService, RedisCacheService>();
 
             return services;

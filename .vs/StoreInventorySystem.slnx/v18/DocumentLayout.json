@@ -3,48 +3,40 @@
   "WorkspaceRootPath": "E:\\Programming\\StoreInventorySystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|solutionrelative:storeinventorysystem\\infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|e:\\programming\\storeinventorysystem\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|solutionrelative:userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\application\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|solutionrelative:storeinventorysystem\\application\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|e:\\programming\\storeinventorysystem\\userservice\\infrastructure\\grpc\\logginginterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|solutionrelative:userservice\\infrastructure\\grpc\\logginginterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|solutionrelative:storeinventorysystem\\presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|e:\\programming\\storeinventorysystem\\userservice\\infrastructure\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|solutionrelative:userservice\\infrastructure\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|solutionrelative:storeinventorysystem\\presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|solutionrelative:storeinventorysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|solutionrelative:storeinventorysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|solutionrelative:storeinventorysystem\\application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\application\\mappers\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\application\\mappers\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|solutionrelative:storeinventorysystem\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\application\\dtos\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\application\\dtos\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\application\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|solutionrelative:storeinventorysystem\\application\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|solutionrelative:storeinventorysystem\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB9524-D616-EB2A-2D1A-95031DC8E931}|StoreInventorySystem\\StoreInventorySystem.csproj|solutionrelative:storeinventorysystem\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,143 +46,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\Interfaces\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "StoreInventorySystem\\Application\\Interfaces\\IProductRepository.cs",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\Interfaces\\IProductRepository.cs",
-              "RelativeToolTip": "StoreInventorySystem\\Application\\Interfaces\\IProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABJAAAAAAAAAA==",
+              "Title": "LoggingInterceptor.cs",
+              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\UserService\\Infrastructure\\Grpc\\LoggingInterceptor.cs",
+              "RelativeDocumentMoniker": "UserService\\Infrastructure\\Grpc\\LoggingInterceptor.cs",
+              "ToolTip": "E:\\Programming\\StoreInventorySystem\\UserService\\Infrastructure\\Grpc\\LoggingInterceptor.cs",
+              "RelativeToolTip": "UserService\\Infrastructure\\Grpc\\LoggingInterceptor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T16:05:17.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "StoreInventorySystem\\Infrastructure\\Repositories\\ProductRepository.cs",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "StoreInventorySystem\\Infrastructure\\Repositories\\ProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T16:05:04.539Z",
+              "WhenOpened": "2026-06-21T17:27:29.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAAJAAAAAAAAAA==",
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\UserService\\Infrastructure\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "UserService\\Infrastructure\\DbSeeder.cs",
+              "ToolTip": "E:\\Programming\\StoreInventorySystem\\UserService\\Infrastructure\\DbSeeder.cs",
+              "RelativeToolTip": "UserService\\Infrastructure\\DbSeeder.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T19:04:21.848Z",
+              "WhenOpened": "2026-06-21T17:16:30.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Infrastructure\\AppDbContext.cs",
+              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\AppDbContext.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Infrastructure\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T17:06:00.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Presentation\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "StoreInventorySystem\\Presentation\\Controllers\\AuthController.cs",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Presentation\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "StoreInventorySystem\\Presentation\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T16:03:41.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "StoreInventorySystem\\Infrastructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "StoreInventorySystem\\Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T15:45:04.299Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "StoreInventorySystem\\Application\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "StoreInventorySystem\\Application\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T15:43:45.198Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "JwtService.cs",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\Services\\JwtService.cs",
-              "RelativeDocumentMoniker": "StoreInventorySystem\\Application\\Services\\JwtService.cs",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\Services\\JwtService.cs",
-              "RelativeToolTip": "StoreInventorySystem\\Application\\Services\\JwtService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T15:00:15.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Program.cs",
               "RelativeDocumentMoniker": "StoreInventorySystem\\Program.cs",
               "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Program.cs",
               "RelativeToolTip": "StoreInventorySystem\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAD8AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T12:01:46.692Z"
+              "WhenOpened": "2026-06-21T17:05:20.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\UserService\\Program.cs",
+              "RelativeDocumentMoniker": "UserService\\Program.cs",
+              "ToolTip": "E:\\Programming\\StoreInventorySystem\\UserService\\Program.cs",
+              "RelativeToolTip": "UserService\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T17:04:57.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
+              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAtwDwAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T16:58:41.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductMapper.cs",
+              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\Mappers\\ProductMapper.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Application\\Mappers\\ProductMapper.cs",
+              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\Mappers\\ProductMapper.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Application\\Mappers\\ProductMapper.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T16:50:33.53Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\appsettings.json",
-              "RelativeDocumentMoniker": "StoreInventorySystem\\appsettings.json",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\appsettings.json",
-              "RelativeToolTip": "StoreInventorySystem\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-17T19:01:21.527Z"
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Application\\Services\\ProductService.cs",
+              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Application\\Services\\ProductService.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAAwHEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T22:54:26.782Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Product.cs",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Domain\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "StoreInventorySystem\\Domain\\Entities\\Product.cs",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Domain\\Entities\\Product.cs",
-              "RelativeToolTip": "StoreInventorySystem\\Domain\\Entities\\Product.cs",
+              "DocumentIndex": 7,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\DTOs\\Product\\ProductDto.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Application\\DTOs\\Product\\ProductDto.cs",
+              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Application\\DTOs\\Product\\ProductDto.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Application\\DTOs\\Product\\ProductDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T12:08:47.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "StoreInventorySystem\\Domain\\Entities\\User.cs",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Domain\\Entities\\User.cs",
-              "RelativeToolTip": "StoreInventorySystem\\Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T12:08:42.294Z"
+              "WhenOpened": "2026-06-18T22:54:10.191Z",
+              "EditorCaption": ""
             }
           ]
         }

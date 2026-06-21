@@ -4,6 +4,8 @@ using StoreInventorySystem.Application.DTOs;
 using StoreInventorySystem.Application.DTOs.Product;
 using StoreInventorySystem.Application.Interfaces;
 using StoreInventorySystem.Application.Mappers;
+using UserService.Grpc;
+using static UserService.Grpc.UsersGrpc;
 
 namespace StoreInventorySystem.Application.Services
 {
@@ -11,11 +13,13 @@ namespace StoreInventorySystem.Application.Services
     {
         private readonly IProductRepository _repository;
         private readonly ICacheService _cache;
+        private readonly UsersGrpcClient _usersClient;
 
-        public ProductService(IProductRepository repository, ICacheService cache)
+        public ProductService(IProductRepository repository, ICacheService cache, UsersGrpcClient usersGrpc)
         {
             _repository = repository;
             _cache = cache;
+            _usersClient = usersGrpc;
         }
 
         public async Task<PagedResult<ProductDto>> GetProducts(int page, int pageSize)
@@ -28,10 +32,23 @@ namespace StoreInventorySystem.Application.Services
                 return cached;
 
             var (products, total) = await _repository.GetPagedAsync(page, pageSize);
+            var productDtos = new List<ProductDto>();
+
+            foreach(var product in products)
+            {
+                var user = await _usersClient.GetUserByIdAsync(new GetUserRequest
+                {
+                    Id = product.CreatedByUserId
+                });
+
+                var dto = ProductMapper.ToDto(product, user.Username);
+
+                productDtos.Add(dto);
+            }
 
             var result = new PagedResult<ProductDto>
             {
-                Items = ProductMapper.ToDtoList(products),
+                Items = productDtos,
                 TotalCount = total
             };
 
@@ -53,7 +70,12 @@ namespace StoreInventorySystem.Application.Services
 
             if (product != null)
             {
-                var dto = ProductMapper.ToDto(product);
+                var user = await _usersClient.GetUserByIdAsync(new GetUserRequest
+                {
+                    Id = product.CreatedByUserId
+                });
+
+                var dto = ProductMapper.ToDto(product, user.Username);
 
                 await _cache.SetAsync(key, dto, TimeSpan.FromMinutes(5));
 
@@ -67,16 +89,29 @@ namespace StoreInventorySystem.Application.Services
         {
             var (products, total) = await _repository.Search(query, page, pageSize);
 
+            var productDtos = new List<ProductDto>();
+
+            foreach(var product in products)
+            {
+                var user = await _usersClient.GetUserByIdAsync(new GetUserRequest
+                {
+                    Id = product.CreatedByUserId,
+                });
+
+                productDtos.Add(ProductMapper.ToDto(product, user.Username));
+            }
+
             return new PagedResult<ProductDto>
             {
-                Items = ProductMapper.ToDtoList(products),
+                Items = productDtos,
                 TotalCount = total
             };
         }
 
-        public async Task<ProductDto> AddProduct(CreateProductDto dto)
+        public async Task<ProductDto> AddProduct(CreateProductDto dto, int userId)
         {
             var product = ProductMapper.ToEntity(dto);
+            product.CreatedByUserId = userId;
 
             await _repository.AddAsync(product);
 
@@ -85,7 +120,12 @@ namespace StoreInventorySystem.Application.Services
                 CacheKeys.Products(1, 20)
             );
 
-            return ProductMapper.ToDto(product);
+            var user = await _usersClient.GetUserByIdAsync(new GetUserRequest
+            {
+                Id = userId
+            });
+
+            return ProductMapper.ToDto(product, user.Username);
         }
 
         public async Task DeleteProduct(int id)
@@ -135,7 +175,7 @@ namespace StoreInventorySystem.Application.Services
 
         private async Task InvalidateProductKeys(params string[] keys)
         {
-            await Task.WhenAll(keys.Select(k => _cache.RemoveAsync(k)));
+            await Task.WhenAll(keys.Select(_cache.RemoveAsync));
         }
     }
 }

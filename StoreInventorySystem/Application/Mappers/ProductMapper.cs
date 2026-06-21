@@ -5,19 +5,15 @@ namespace StoreInventorySystem.Application.Mappers
 {
     public static class ProductMapper
     {
-        public static ProductDto ToDto(Product product)
+        public static ProductDto ToDto(Product product, string createdByUsername)
         {
             return new ProductDto
             {
                 Id = product.Id,
                 Name = product.Name,
-                Price = product.Price
+                Price = product.Price,
+                CreatedByUsername = createdByUsername
             };
-        }
-
-        public static List<ProductDto> ToDtoList(List<Product> products)
-        {
-            return products.Select(ToDto).ToList();
         }
 
         public static Product ToEntity(CreateProductDto productDto)
@@ -25,7 +21,7 @@ namespace StoreInventorySystem.Application.Mappers
             return new Product
             {
                 Name = productDto.Name,
-                Price = productDto.Price
+                Price = productDto.Price,
             };
         }
 

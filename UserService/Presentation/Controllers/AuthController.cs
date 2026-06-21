@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity.Data;
-using Microsoft.AspNetCore.Mvc;
-using StoreInventorySystem.Application.Services;
-using RegisterRequest = StoreInventorySystem.Application.DTOs.Auth.RegisterRequest;
-using LoginRequest = StoreInventorySystem.Application.DTOs.Auth.LoginRequest;
+﻿using Microsoft.AspNetCore.Mvc;
+using UserService.Application.DTOs.Auth;
+using UserService.Application.Services;
 
-namespace StoreInventorySystem.Presentation.Controllers
+namespace UserService.Presentation.Controllers
 {
     [Route("api/auth")]
     public class AuthController : ControllerBase

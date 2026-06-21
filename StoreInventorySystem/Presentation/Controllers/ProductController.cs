@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using StoreInventorySystem.Application.DTOs;
 using StoreInventorySystem.Application.DTOs.Product;
 using StoreInventorySystem.Application.Services;
+using System.Security.Claims;
 
 namespace StoreInventorySystem.Presentation.Controllers
 {
@@ -55,7 +56,9 @@ namespace StoreInventorySystem.Presentation.Controllers
         [HttpPost]
         public async Task<ActionResult<ProductDto>> Create(CreateProductDto product)
         {
-            var created = await _productService.AddProduct(product);
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+
+            var created = await _productService.AddProduct(product, userId);
 
             return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
