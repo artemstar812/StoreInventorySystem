@@ -73,6 +73,15 @@ namespace StoreInventorySystem.Presentation.Controllers
         }
 
         [Authorize(Roles = "Admin")]
+        [HttpPatch("{id}/amount")]
+        public async Task<IActionResult> AddAmount(int id, int amount = 1)
+        {
+            await _productService.AddProductAmount(id, amount);
+
+            return NoContent();
+        }
+
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

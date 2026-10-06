@@ -1,3 +1,4 @@
+using InventorySystem.Infrastructure.Grpc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
@@ -54,6 +55,8 @@ builder.Services.AddAuthentication("Bearer")
 
 builder.Services.AddAuthorization();
 
+builder.Services.AddGrpc();
+
 builder.Services.AddGrpcClient<UsersGrpc.UsersGrpcClient>(options =>
 {
     options.Address = new Uri("https://localhost:7178");
@@ -74,6 +77,8 @@ app.UseLogMiddleware();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapGrpcService<InventoryGrpcService>();
 
 app.MapControllers();
 

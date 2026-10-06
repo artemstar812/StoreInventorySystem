@@ -177,5 +177,41 @@ namespace StoreInventorySystem.Application.Services
         {
             await Task.WhenAll(keys.Select(_cache.RemoveAsync));
         }
+
+        public async Task AddProductAmount(int id, int amount)
+        {
+            var product = await _repository.GetByIdAsync(id);
+
+            if (product == null)
+                throw new Exception("Product not found");
+                
+            product.Amount += amount;
+
+            await _repository.UpdateAsync(id, product);
+
+            await InvalidateProductKeys(
+                CacheKeys.Stats,
+                CacheKeys.Products(1, 20),
+                CacheKeys.Product(id)
+            );
+        }
+        
+        public async Task DecreaseProductAmount(int id, int amount)
+        {
+            var product = await _repository.GetByIdAsync(id);
+
+            if (product == null)
+                throw new Exception("Product not found");
+                
+            product.Amount -= amount;
+
+            await _repository.UpdateAsync(id, product);
+
+            await InvalidateProductKeys(
+                CacheKeys.Stats,
+                CacheKeys.Products(1, 20),
+                CacheKeys.Product(id)
+            );
+        }
     }
 }

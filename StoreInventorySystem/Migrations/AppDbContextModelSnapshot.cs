@@ -22,6 +22,9 @@ namespace StoreInventorySystem.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("Amount")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("CreatedByUserId")
                         .HasColumnType("INTEGER");
 

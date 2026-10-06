@@ -12,7 +12,8 @@ namespace StoreInventorySystem.Application.Mappers
                 Id = product.Id,
                 Name = product.Name,
                 Price = product.Price,
-                CreatedByUsername = createdByUsername
+                CreatedByUsername = createdByUsername,
+                Amount = product.Amount
             };
         }
 
