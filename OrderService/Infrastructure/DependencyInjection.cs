@@ -14,7 +14,7 @@ namespace OrderService.Infrastructure
             {
                 var config = new ProducerConfig
                 {
-                    BootstrapServers = "localhost:9092"
+                    BootstrapServers = "localhost:9094"
                 };
 
                 return new ProducerBuilder<string, string>(config).Build();

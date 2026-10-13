@@ -1,6 +1,8 @@
 ﻿using Confluent.Kafka;
+using Microsoft.EntityFrameworkCore;
 using Shared.Contracts.Events;
 using StoreInventorySystem.Application.Services;
+using StoreInventorySystem.Infrastructure;
 using System.Text.Json;
 
 namespace InventorySystem.Infrastructure.Messaging.Consumers
@@ -29,11 +31,13 @@ namespace InventorySystem.Infrastructure.Messaging.Consumers
                 if (@event == null)
                     continue;
 
+                var eventId = @event.EventId;
+
                 using var scope = _scopeFactory.CreateScope();
 
                 var productService = scope.ServiceProvider.GetRequiredService<ProductService>();
 
-                await productService.AddProductAmount(@event.ProductId, @event.Quantity);
+                await productService.HandleOrderFailedAsync(eventId, @event.ProductId, @event.Quantity, stoppingToken);
             }
         }
 

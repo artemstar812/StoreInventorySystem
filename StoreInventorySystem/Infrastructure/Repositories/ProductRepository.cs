@@ -32,7 +32,6 @@ namespace StoreInventorySystem.Infrastructure.Repositories
         public async Task AddAsync(Product product)
         {
             await _context.Products.AddAsync(product);
-            await _context.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(int id)
@@ -42,8 +41,6 @@ namespace StoreInventorySystem.Infrastructure.Repositories
             if (product != null)
             {
                 _context.Products.Remove(product);
-
-                await _context.SaveChangesAsync();
             }
         }
 
@@ -80,9 +77,8 @@ namespace StoreInventorySystem.Infrastructure.Repositories
                 return;
 
             product.Name = updatedProduct.Name;
+            product.Amount = updatedProduct.Amount;
             product.Price = updatedProduct.Price;
-
-            await _context.SaveChangesAsync();
         }
 
         public async Task<ProductStatsDto> GetStats()

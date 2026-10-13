@@ -1,14 +1,94 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Programming\\StoreInventorySystem\\",
+  "WorkspaceRootPath": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|e:\\programming\\storeinventorysystem\\orderservice\\infrastructure\\kafkaeventproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\storeinventorysystem\\application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\storeinventorysystem\\infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E86EE2F-6F51-4B21-90CF-43F2ED5AEB3F}|Shared.Contracts\\Shared.Contracts.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\shared.contracts\\events\\orderfailedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E86EE2F-6F51-4B21-90CF-43F2ED5AEB3F}|Shared.Contracts\\Shared.Contracts.csproj|solutionrelative:shared.contracts\\events\\orderfailedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\storeinventorysystem\\infrastructure\\grpc\\inventorygrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\infrastructure\\grpc\\inventorygrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\storeinventorysystem\\infrastructure\\messaging\\consumers\\orderfailedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\infrastructure\\messaging\\consumers\\orderfailedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\orderservice\\application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\storeinventorysystem\\domain\\entities\\processedmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\domain\\entities\\processedmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E86EE2F-6F51-4B21-90CF-43F2ED5AEB3F}|Shared.Contracts\\Shared.Contracts.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\shared.contracts\\events\\interfaces\\iintegrationevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E86EE2F-6F51-4B21-90CF-43F2ED5AEB3F}|Shared.Contracts\\Shared.Contracts.csproj|solutionrelative:shared.contracts\\events\\interfaces\\iintegrationevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\orderservice\\infrastructure\\kafkaeventproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\infrastructure\\kafkaeventproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|e:\\programming\\storeinventorysystem\\storeinventorysystem\\infrastructure\\messaging\\consumers\\orderfailedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\infrastructure\\messaging\\consumers\\orderfailedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\orderservice\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\orderservice\\application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|solutionrelative:userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\storeinventorysystem\\infrastructure\\repositories\\processedmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\infrastructure\\repositories\\processedmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\storeinventorysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\userservice\\infrastructure\\grpc\\logginginterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|solutionrelative:userservice\\infrastructure\\grpc\\logginginterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\userservice\\infrastructure\\grpc\\usersgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|solutionrelative:userservice\\infrastructure\\grpc\\usersgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\userservice\\presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|solutionrelative:userservice\\presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\userservice\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4FFD45C-1727-4676-AA8B-0A59BAF39529}|UserService\\UserService.csproj|solutionrelative:userservice\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\orderservice\\presentation\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\presentation\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\storeinventorysystem\\presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\orderservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0473C6B0-3471-482B-BB0A-FB486D85B364}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|c:\\users\\artem\\documents\\github\\storeinventorysystem\\storeinventorysystem\\protos\\orders.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{B2284403-0A7D-A4D3-9882-9527EC0146FC}|StoreInventorySystem\\InventorySystem.csproj|solutionrelative:storeinventorysystem\\protos\\orders.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +98,276 @@
       "DocumentGroups": [
         {
           "DockedWidth": 208,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "KafkaEventProducer.cs",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\OrderService\\Infrastructure\\KafkaEventProducer.cs",
-              "RelativeDocumentMoniker": "OrderService\\Infrastructure\\KafkaEventProducer.cs",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\OrderService\\Infrastructure\\KafkaEventProducer.cs",
-              "RelativeToolTip": "OrderService\\Infrastructure\\KafkaEventProducer.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "InventoryGrpcService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Grpc\\InventoryGrpcService.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Infrastructure\\Grpc\\InventoryGrpcService.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Grpc\\InventoryGrpcService.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Infrastructure\\Grpc\\InventoryGrpcService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAYwDcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-02T22:28:15.869Z",
+              "WhenOpened": "2026-10-08T12:40:18.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Application\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Application\\Services\\ProductService.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAAAO0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T11:46:10.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderFailedConsumer.cs",
-              "DocumentMoniker": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Messaging\\Consumers\\OrderFailedConsumer.cs",
-              "RelativeDocumentMoniker": "StoreInventorySystem\\Infrastructure\\Messaging\\Consumers\\OrderFailedConsumer.cs",
-              "ToolTip": "E:\\Programming\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Messaging\\Consumers\\OrderFailedConsumer.cs",
-              "RelativeToolTip": "StoreInventorySystem\\Infrastructure\\Messaging\\Consumers\\OrderFailedConsumer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAwwCEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-02T22:27:36.8Z",
+              "WhenOpened": "2026-10-09T11:47:20.069Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderFailedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\Shared.Contracts\\Events\\OrderFailedEvent.cs",
+              "RelativeDocumentMoniker": "Shared.Contracts\\Events\\OrderFailedEvent.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\Shared.Contracts\\Events\\OrderFailedEvent.cs",
+              "RelativeToolTip": "Shared.Contracts\\Events\\OrderFailedEvent.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T22:53:47.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderFailedConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Messaging\\Consumers\\OrderFailedConsumer.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Infrastructure\\Messaging\\Consumers\\OrderFailedConsumer.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Messaging\\Consumers\\OrderFailedConsumer.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Infrastructure\\Messaging\\Consumers\\OrderFailedConsumer.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwBoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T09:54:32.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Application\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "OrderService\\Application\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Application\\Services\\OrderService.cs",
+              "RelativeToolTip": "OrderService\\Application\\Services\\OrderService.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAF4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T12:41:48.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProcessedMessage.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Domain\\Entities\\ProcessedMessage.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Domain\\Entities\\ProcessedMessage.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Domain\\Entities\\ProcessedMessage.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Domain\\Entities\\ProcessedMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T17:19:26.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "OrderService\\Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "OrderService\\Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T12:46:29.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "OrderService\\Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Application\\DependencyInjection.cs",
+              "RelativeToolTip": "OrderService\\Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T12:46:22.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IIntegrationEvent.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\Shared.Contracts\\Events\\Interfaces\\IIntegrationEvent.cs",
+              "RelativeDocumentMoniker": "Shared.Contracts\\Events\\Interfaces\\IIntegrationEvent.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\Shared.Contracts\\Events\\Interfaces\\IIntegrationEvent.cs",
+              "RelativeToolTip": "Shared.Contracts\\Events\\Interfaces\\IIntegrationEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T22:53:53.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KafkaEventProducer.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Infrastructure\\KafkaEventProducer.cs",
+              "RelativeDocumentMoniker": "OrderService\\Infrastructure\\KafkaEventProducer.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Infrastructure\\KafkaEventProducer.cs",
+              "RelativeToolTip": "OrderService\\Infrastructure\\KafkaEventProducer.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswBEAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T12:46:37.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\UserService\\Program.cs",
+              "RelativeDocumentMoniker": "UserService\\Program.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\UserService\\Program.cs",
+              "RelativeToolTip": "UserService\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T12:44:57.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Program.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Program.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Program.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T12:44:17.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProcessedMessageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Repositories\\ProcessedMessageRepository.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Infrastructure\\Repositories\\ProcessedMessageRepository.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Infrastructure\\Repositories\\ProcessedMessageRepository.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Infrastructure\\Repositories\\ProcessedMessageRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T15:31:12.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UsersGrpcService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\UserService\\Infrastructure\\Grpc\\UsersGrpcService.cs",
+              "RelativeDocumentMoniker": "UserService\\Infrastructure\\Grpc\\UsersGrpcService.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\UserService\\Infrastructure\\Grpc\\UsersGrpcService.cs",
+              "RelativeToolTip": "UserService\\Infrastructure\\Grpc\\UsersGrpcService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:27:20.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\UserService\\Presentation\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "UserService\\Presentation\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\UserService\\Presentation\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "UserService\\Presentation\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:28:00.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\UserService\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "UserService\\Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\UserService\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "UserService\\Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:27:46.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoggingInterceptor.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\UserService\\Infrastructure\\Grpc\\LoggingInterceptor.cs",
+              "RelativeDocumentMoniker": "UserService\\Infrastructure\\Grpc\\LoggingInterceptor.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\UserService\\Infrastructure\\Grpc\\LoggingInterceptor.cs",
+              "RelativeToolTip": "UserService\\Infrastructure\\Grpc\\LoggingInterceptor.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:27:10.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "StoreInventorySystem\\Presentation\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:24:31.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Presentation\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "OrderService\\Presentation\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Presentation\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "OrderService\\Presentation\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwC4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T12:42:51.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Program.cs",
+              "RelativeDocumentMoniker": "OrderService\\Program.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\OrderService\\Program.cs",
+              "RelativeToolTip": "OrderService\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T12:45:10.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "orders.proto",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Protos\\orders.proto",
+              "RelativeDocumentMoniker": "StoreInventorySystem\\Protos\\orders.proto",
+              "ToolTip": "C:\\Users\\artem\\Documents\\GitHub\\StoreInventorySystem\\StoreInventorySystem\\Protos\\orders.proto",
+              "RelativeToolTip": "StoreInventorySystem\\Protos\\orders.proto",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2026-10-08T12:40:54.525Z"
             }
           ]
         }

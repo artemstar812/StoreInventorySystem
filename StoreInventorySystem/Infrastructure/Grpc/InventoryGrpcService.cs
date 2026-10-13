@@ -1,5 +1,6 @@
 ﻿using Grpc.Core;
 using InventoryService.Grpc;
+using InventorySystem.Application.Interfaces;
 using StoreInventorySystem.Application.Interfaces;
 using StoreInventorySystem.Application.Services;
 
@@ -9,11 +10,13 @@ namespace InventorySystem.Infrastructure.Grpc
     {
         private readonly IProductRepository _repository;
         private readonly ProductService _productService;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public InventoryGrpcService(IProductRepository repository, ProductService productService) 
+        public InventoryGrpcService(IProductRepository repository, ProductService productService, IUnitOfWork unitOfWork) 
         {
             _repository = repository;
             _productService = productService;
+            _unitOfWork = unitOfWork;
         }
 
         public override async Task<ProductResponse> GetProduct(GetProductRequest request, ServerCallContext context)
@@ -49,6 +52,8 @@ namespace InventorySystem.Infrastructure.Grpc
             if(product.Amount >= request.Quantity)
             {
                 await _productService.DecreaseProductAmount(request.ProductId, request.Quantity);
+
+                await _unitOfWork.SaveChangesAsync();
 
                 double price = (double)(product.Price * request.Quantity);
 
